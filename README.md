@@ -61,12 +61,12 @@ Para agregar un ejemplo, pon la imagen con el aviso enmarcado en `assets/images_
 
 ## Reglas de la categoría final
 
-**Regla de oro (decisión del equipo):** un objeto solo es Valla o Fachada si se lee con claridad el nombre, la marca o el mensaje principal, y no hay duda de que es un aviso publicitario. Vale también para las vallas.
-
-- `Dudoso`: se ve que es un letrero o aviso, pero no se lee con claridad, o hay duda de que sea publicidad. Incluye letreros pequeños e ilegibles en la fachada de un local.
-- `NoPublicidad`: vehículos, señales de tránsito o informativas, nomenclatura, y manchas imposibles de reconocer. Van a `descartados` y no se dibujan.
-- Con Haiku, la categoría no la elige el modelo: Haiku responde `tipo` (aviso / posible_aviso / no_aviso), `ubicacion`, `texto` y `lectura_clara`, y `haiku_label` en `app/classify.py` aplica la regla.
+- `NoPublicidad`: vehículos, señales de tránsito o informativas y objetos que no son avisos. Van a `descartados` y no se dibujan.
+- `NoPublicidad` también incluye los objetos que no se pueden identificar y no muestran ninguna señal comercial.
+- `Dudoso`: el objeto tiene alguna señal comercial pero no es claro si es publicidad, o es claramente un aviso que no se puede leer. Una Valla ilegible sigue siendo Valla, porque se reconoce por su estructura.
+  - Con OpenAI también pasa a Dudoso cuando la confianza de la categoría es menor que 0.6.
 - Los criterios completos están en `CRITERIOS`, dentro de `app/classify.py`.
+- Se probó una "regla de oro" más estricta (Valla/Fachada solo si el modelo declara lectura clara, commit `8a29854`). Bajó la precisión de 79 % a 69 % en la muestra aleatoria de 150, porque Haiku marcaba como poco claros letreros que sí había transcrito. No se usa.
 
 ## Limitaciones conocidas
 
@@ -81,10 +81,10 @@ Para agregar un ejemplo, pon la imagen con el aviso enmarcado en `assets/images_
 .venv/bin/python -m app.label_page output_v4 --muestra 150 --excluir ~/Downloads/etiquetas_manuales.csv   # muestra aleatoria
 ```
 
-Configuración recomendada para lotes nuevos (solo Haiku, contexto a 768 px):
+Configuración recomendada para lotes nuevos: solo Haiku. La ventana de contexto va a 768 px por defecto (`CONTEXT_MAX_SIDE`).
 
 ```bash
-CONTEXT_MAX_SIDE=768 .venv/bin/python -m app assets/images --classifier haiku
+.venv/bin/python -m app assets/images --classifier haiku
 ```
 
 `etiquetar.html` muestra los objetos en los que Haiku y OpenAI no coinciden, mezclados con 30 acuerdos de control. Por defecto oculta las respuestas de los modelos. Las etiquetas se guardan en el navegador y "Descargar CSV" las exporta. `app.evaluate` calcula cuánto acierta cada clasificador (haiku, openai y final) contra esas etiquetas.

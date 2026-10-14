@@ -172,3 +172,50 @@ if __name__ == "__main__":
     ap.add_argument("--excluir", type=Path, help="CSV de etiquetas ya hechas, para no repetirlas")
     a = ap.parse_args()
     print(build(Path(a.out_dir), a.controles, muestra=a.muestra, excluir=a.excluir))
+
+
+def build_review(out_dir: Path, labels_csv: Path, preds_json: Path) -> Path:
+    """Página de adjudicación: solo los objetos donde el modelo y la etiqueta manual no coinciden.
+    Muestra ambas respuestas y deja la etiqueta manual preseleccionada para confirmarla o cambiarla."""
+    import csv
+
+    preds = json.loads(preds_json.read_text())
+    rows = [r for r in csv.DictReader(open(labels_csv, encoding="utf-8")) if preds[f"{r['imagen']}#{r['id']}"]["label"] != r["etiqueta"]]
+    cards, pre = [], {}
+    for n, r in enumerate(rows, 1):
+        key = f"{r['imagen']}#{r['id']}"
+        c = preds[key]
+        ctx = out_dir / r["imagen"] / "ctx" / f"{int(r['id']):02d}.jpg"
+        if not ctx.exists():
+            res = json.loads((out_dir / r["imagen"] / "resultado.json").read_text())
+            obj = next(x for x in res["avisos"] + res["descartados"] if x["id"] == int(r["id"]))
+            ctx.parent.mkdir(exist_ok=True)
+            win = context_window(Image.open(res["imagen"]).convert("RGB"), obj["bbox_xyxy"])
+            win.thumbnail((1000, 1000))
+            win.save(ctx, quality=85)
+        pre[key] = r["etiqueta"]
+        buttons = "".join(f'<button data-l="{l}">{i}. {l}</button>' for i, l in enumerate(LABELS, 1))
+        cards.append(
+            f'<div class="card" data-key="{key}" data-img="{r["imagen"]}" data-id="{r["id"]}" data-grupo="{r["grupo"]}">'
+            f'<div class="muted">{n}. {r["imagen"]} · objeto #{r["id"]}</div>'
+            f'<div class="imgs"><img loading="lazy" src="{r["imagen"]}/crops/{int(r["id"]):02d}.jpg" alt="recorte">'
+            f'<img loading="lazy" src="{r["imagen"]}/ctx/{int(r["id"]):02d}.jpg" alt="contexto"></div>'
+            f'<div>Tu etiqueta: <b>{r["etiqueta"]}</b> · Modelo: <b>{html.escape(c["label"])}</b> · lee: “{html.escape(c.get("texto", "")[:80])}”</div>'
+            f'<div class="muted">{html.escape(c.get("razon", ""))}</div>'
+            f'<div class="row" style="margin-top:6px">{buttons}</div></div>'
+        )
+    page = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Revision {out_dir.name}</title><style>{CSS}</style></head><body>
+<header>
+<h1>Revisión de desacuerdos</h1>
+<div class="muted">Objetos donde tu etiqueta y el modelo no coinciden. Tu etiqueta viene marcada: confírmala o cámbiala.
+El modelo también se equivoca; cambia solo si al mirar de nuevo tu etiqueta estaba mal.</div>
+<div class="bar"><div id="prog"></div></div>
+<div class="row"><b id="cnt"></b><button class="primary" onclick="exportCsv()">Descargar CSV</button></div>
+</header>
+{"".join(cards)}
+<script>{JS.replace("store=JSON.parse(localStorage.getItem(KEY)||'{}')", "store=Object.assign(" + json.dumps(pre) + ",JSON.parse(localStorage.getItem(KEY)||'{}'))")}</script></body></html>"""
+    path = out_dir / "revisar_desacuerdos.html"
+    path.write_text(page, encoding="utf-8")
+    print(f"{len(rows)} desacuerdos")
+    return path

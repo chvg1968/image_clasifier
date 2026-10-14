@@ -29,8 +29,8 @@ Categorías:
 estructura metálica, valla en azotea o en lote, tótem sobre su propio poste), aunque \
 esté junto a un negocio.
 - Fachada: aviso adosado, pintado o instalado sobre la pared, columna, muro, marquesina, \
-toldo o vitrina de un edificio o local (letreros de negocio, pendones en fachada, \
-directorios de locales, avisos de "se vende/se arrienda" en el edificio).
+toldo o vitrina de un edificio o local (letrero principal del negocio, pendones \
+comerciales en fachada, directorios de locales).
 - Dudoso: el objeto muestra alguna señal comercial (marca, logo, nombre de negocio, teléfono, \
 producto, "se vende/arrienda", panel típico de aviso) pero hay ambigüedad real sobre si es \
 publicidad, o se sabe que es un aviso pero su contenido no se puede leer (borroso, lejano o \
@@ -44,7 +44,16 @@ comercial visible, NO es publicidad (no se marca): es ruido de la detección.
 - NO son publicidad (no se marcan): marcas o rótulos en vehículos (buses, camiones, \
 contenedores, furgones, taxis), señales de tránsito y nomenclatura vial, señales \
 informativas sin marca (SALIDA, PARE, números de casa), semáforos, grafitis sin marca, \
-ventanas, rejas y objetos que solo se parecen a un aviso."""
+ventanas, rejas y objetos que solo se parecen a un aviso.
+- Decisiones del equipo, también NO son publicidad (NoPublicidad):
+  * carteles particulares de "se vende" / "se arrienda" pegados en la fachada o la reja;
+  * el nombre del propio edificio, conjunto o bloque en su muro (placas "BLOQUE 7", "TORRE B", \
+"Conjunto Los Pinos", letras corpóreas con el nombre del edificio). En cambio, un \
+proyecto inmobiliario anunciado en una valla SÍ es Valla;
+  * letreros secundarios o informativos de un local ("servicio a domicilio", "garaje en uso", \
+"propiedad privada", horarios), calcomanías de vitrina y el poste de barbería: solo cuenta \
+el aviso principal del negocio o una marca anunciada;
+  * letreros de canchas y escenarios deportivos del barrio, aunque muestren un patrocinador."""
 
 
 @dataclass
@@ -59,6 +68,11 @@ class Classification:
 
     def to_dict(self) -> dict:
         return asdict(self)
+
+
+# Lado mayor de la ventana de contexto enviada a la API. 768 px cuesta ~4× menos tokens que 1568
+# y en las etiquetas manuales rindió igual o mejor.
+CONTEXT_MAX_SIDE = int(os.getenv("CONTEXT_MAX_SIDE", "768"))
 
 
 def _b64(img: Image.Image, max_side: int = 1568) -> str:
@@ -164,7 +178,7 @@ class HaikuClassifier:
         self.example_blocks = blocks
 
     def classify(self, image: Image.Image, box: list[float]) -> Classification:
-        crop_b64, ctx_b64 = _b64(crop_object(image, box)), _b64(context_window(image, box))
+        crop_b64, ctx_b64 = _b64(crop_object(image, box)), _b64(context_window(image, box), CONTEXT_MAX_SIDE)
         response = self.client.messages.create(
             model=self.model,
             max_tokens=4096,
@@ -232,7 +246,7 @@ class DecisionsClassifier:
         self.example_parts = parts
 
     def classify(self, image: Image.Image, box: list[float]) -> Classification:
-        crop_b64, ctx_b64 = _b64(crop_object(image, box)), _b64(context_window(image, box))
+        crop_b64, ctx_b64 = _b64(crop_object(image, box)), _b64(context_window(image, box), CONTEXT_MAX_SIDE)
         decision = self.client.decisions.create(
             model=self.model,
             input=[

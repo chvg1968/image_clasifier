@@ -1,0 +1,59 @@
+L6_070.jpg: 8
+L6_098.jpg: 15
+L6_078.jpg: 16
+L6_081.jpg: 4
+L6_095.jpg: 6
+L6_075.jpg: 7
+L6_059.jpg: 31
+L6_092.jpg: 4
+L6_086.jpg: 5
+L6_088.jpg: 5
+L6_082.jpg: 1
+L6_072.jpg: 6
+L6_066.jpg: 4
+L6_074.jpg: 14
+L6_069.jpg: 1
+L6_094.jpg: 4
+L6_076.jpg: 10
+L6_089.jpg: 4
+L6_058.jpg: 4
+L6_057.jpg: 7
+L6_083.jpg: 6
+L6_077.jpg: 7
+L6_071.jpg: 4
+L6_084.jpg: 3
+L6_100.jpg: 2
+L6_096.jpg: 8
+L6_099.jpg: 3
+L6_093.jpg: 3
+L6_060.jpg: 3
+L6_056.jpg: 2
+L6_068.jpg: 2
+L6_080.jpg: 1
+L6_085.jpg: 6
+L6_063.jpg: 1
+L6_067.jpg: 3
+L6_061.jpg: 3
+L6_073.jpg: 2
+L6_091.jpg: 8
+L6_079.jpg: 1
+L6_090.jpg: 1
+L6_087.jpg: 1
+L6_055.jpg: 1
+L6_064.jpg: 1
+L6_054.jpg: 2
+
+claude-haiku-5-5 — errores de API: 0 — predicciones en etiquetas/pred_claude-haiku-5-5.json
+  aleatorio        exacta 118/150 (79%) · V/F dibujadas correctas 22/32 · V/F reales encontradas 22/34
+  aleatorio-mitad  exacta  63/79 (80%) · V/F dibujadas correctas 15/20 · V/F reales encontradas 15/20
+  difíciles 80     exacta  44/80 (55%) · V/F dibujadas correctas 9/18 · V/F reales encontradas 9/13
+
+Errores (aleatorio, real → predicho):
+  Dudoso        → Fachada       6
+  Fachada       → NoPublicidad  6
+  Dudoso        → NoPublicidad  6
+  NoPublicidad  → Dudoso        5
+  Fachada       → Dudoso        5
+  NoPublicidad  → Fachada       2
+  Valla         → Fachada       1
+  NoPublicidad  → Valla         1

@@ -1,0 +1,2072 @@
+{
+ "L6_070#13": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "AVIVA SENTIMIENTO",
+  "razon": "Letrero de nombre sobre el muro de fachada del edificio de ladrillo; texto con aspecto comercial adosado a la pared, aunque el contenido es parcialmente borroso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_070#11": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto pequeño y muy oscuro adosado a la puerta de un edificio residencial, sin señal comercial legible ni estructura clara de aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_070#15": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto muy pequeño y borroso en la imagen, sin señal comercial visible ni estructura clara de aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_070#21": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: recorte muy oscuro y borroso, con apenas un rectángulo de letrero sobre la pared de un edificio residencial, sin contenido legible ni señal comercial clara.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_070#4": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "RP",
+  "razon": "Panel circular con logo 'RP' e iconos de contacto, adosado a la pared de fachada del centro de servicio automotriz, por lo que es aviso de fachada del negocio.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_070#20": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y de baja resolución adosado a la pared de ladrillo, parece un intercomunicador o citófono (teclado y pantalla) sin señal comercial visible; no identificable como aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_070#7": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "SE VENDE APARTAMENTO INFORMES 214 335 6656",
+  "razon": "Cartel particular de 'se vende/arrienda' apoyado sobre las rejas de una ventana del edificio, por lo que el equipo lo excluye como NoPublicidad; la categoría Dudoso se usa solo porque el esquema exige una de las tres opciones.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_070#19": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Reja metálica blanca y verde con muro; no se observa señal comercial ni contenido legible, solo una reja, por lo que no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#22": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Baita",
+  "razon": "Panel con la marca Baita adosado al muro de ladrillo de un edificio comercial, junto a otros avisos de locales, por lo que es un aviso de fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#40": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Recorte muy borroso y oscuro, no identificable; en la imagen de alrededores solo parece un pequeño panel sobre un poste o estructura junto a la vía, sin contenido legible ni señal comercial clara.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#28": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Kiwi Jet / logo de lavadora",
+  "razon": "Panel publicitario instalado sobre la fachada del edificio comercial (muro del local), con marca y producto visibles; no es una estructura independiente.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#7": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Frutas & Semillas Mercado saludable",
+  "razon": "Aviso comercial con marca y producto adosado a la pared de un muro de centro comercial, parte de un conjunto de avisos de locales sobre la fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#32": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Frisby, PIDE EN LÍNEA FRISBY.COM.CO, PIDE A TRAVÉS DE WHATSAPP 3103 317 717",
+  "razon": "Mural publicitario de la marca Frisby pintado sobre la fachada del edificio comercial, con logo, teléfono y web, por lo que se clasifica como Fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#11": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Droguería Hermana, teléfonos 679 5811 / 318 490 4321",
+  "razon": "Aviso rojo con nombre de droguería y teléfonos, adosado a la fachada del edificio comercial, por lo que es Fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#24": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "dna",
+  "razon": "Aviso con logotipo 'dna' y panel azul adosado a la fachada de un edificio comercial, junto a otros avisos de locales; no es una valla independiente.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#0": {
+  "label": "Valla",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "317 644 3072 Orión Aportamentos Woze cielo Centro Sur",
+  "razon": "Aviso comercial de Orión Apartamentos con teléfono y logos, montado sobre un poste propio de madera que lo sostiene; estructura independiente, por eso es Valla.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#16": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de tránsito de límite de velocidad 30 sobre poste propio; no es publicidad, aunque la clasificación de categoría no aplica por ser señal vial.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#3": {
+  "label": "Valla",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "DISPONIBLE 301 374 3703",
+  "razon": "Gran panel blanco sobre estructura propia de valla en zona verde junto a la vía, con texto de disponibilidad y teléfono; estructura independiente de un monoposte, por lo que es Valla aunque el contenido esté parcialmente tapado por grafiti y follaje.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#9": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Bella",
+  "razon": "Aviso con la marca 'Bella' instalado sobre el muro de la fachada del edificio del centro comercial, junto a otros avisos de locales; es un aviso adosado a la pared, no una estructura propia.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#21": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto en la pared de la fachada del edificio comercial, con una figura de mariposa o sombra sobre un panel blanco; sin marca, logo ni texto legible, no se puede confirmar si es aviso o ruido de detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#1": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Plaza 77 Hotel",
+  "razon": "Logo circular con marca 'Plaza 77 Hotel' adosado sobre el muro del edificio, por lo que es un aviso de fachada del establecimiento.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#4": {
+  "label": "Valla",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "320 722 2020 (WhatsApp)",
+  "razon": "Aviso publicitario con teléfono de WhatsApp sobre una estructura metálica propia de valla (monoposte con soporte independiente) ubicada en un parque.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_098#35": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto oscuro y pequeño sobre un poste, sin marca ni señal comercial legible; parece un semáforo o poste de tránsito.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#40": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto rojo muy pequeño y borroso a la distancia, sin contenido legible ni estructura clara que permita confirmarlo como aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#42": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: fragmento de marca vial (símbolo pintado en el asfalto de la calzada), sin señal comercial ni estructura de aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#7": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Punto Virtual, Impresiones y escáner, Accesorios para celulares, Servicio técnico, Diseño gráfico, Bancolombia, gana, PTM",
+  "razon": "Aviso tipo caballete (A-frame) de publicidad comercial independiente sobre la acera, con marca y teléfonos visibles; no está adosado a fachada ni es una estructura propia tipo valla, por lo que la categoría es ambigua.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#38": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño, oscuro y borroso sin señal comercial legible; no identificable, se trata como ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#22": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso sobre la pared de la droguería, sin marca ni texto legible; no identificable como aviso, es ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#18": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel tipo aviso con un logo amarillo y letras ilegibles por lo borroso y lejano; está adosado al muro de un edificio de apartamentos, pero su contenido comercial no se puede leer.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#11": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "WOK",
+  "razon": "Letrero colgante de forma ovalada con la marca WOK, sujeto por un soporte adosado a la fachada del local de la esquina, por lo que es un aviso de fachada del negocio.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#43": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "DROGUERIA GRAN MANZANA 2 DOMICILIO GRATIS 612 96 13 322 654 27 31",
+  "razon": "Aviso de droguería pintado sobre la columna del local, con teléfonos y productos; es el letrero principal del negocio adosado a la fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#41": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de tránsito en forma de rombo (prioridad o cruce) sin marca comercial visible; no es publicidad, sostenida por un poste vial.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#37": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y muy borroso, sin señal comercial identificable ni estructura clara de aviso; no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#25": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso adherido a la pared del edificio; parece un pequeño cartel con texto ilegible, sin marca identificable, por lo que se trata como ruido de la detección y no se marca como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#5": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel sobre un poste con pictograma de cámara de vigilancia y grafiti sin marca comercial; es una señal informativa de seguridad, no publicidad, por lo que no se marca.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#44": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto pequeño y borroso adosado a la fachada de la droguería, sin marca ni texto legible; posible ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#32": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto pequeño, oscuro y borroso adosado a un poste en la acera, sin señal comercial legible ni marca visible; se trata de ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#39": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: panel pequeño y borroso sobre un muro bajo o repisa, con letras ilegibles y sin señal comercial visible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_078#19": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel rojo-amarillo con texto ilegible en la parte superior de un local, adosado a la fachada del edificio; se ve como aviso de negocio pero su contenido no se puede leer por borrosidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_081#6": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño, oscuro y borroso sobre un muro de la casa, sin señal comercial legible; no identificable, se considera ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_081#8": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso sobre el parabrisas de un vehículo, con un dibujo que podría ser un sticker; no se identifica ninguna marca ni señal comercial clara, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_081#0": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso pegado a un poste de concreto con barras; apenas se distinguen unas líneas y números, sin marca ni señal comercial identificable, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_081#7": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto sobre el muro superior del edificio, de color claro y muy borroso, sin marca, logo ni texto identificable; no hay señal comercial visible, por lo que no se puede confirmar que sea un aviso. Sustrato: tela o lona sobre la azotea/baranda; no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_095#6": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "BAIS",
+  "razon": "Panel rojo pequeño con letras azul-verdosas que podría ser un aviso de local, sujeto al poste azul junto a la tienda, pero el texto está borroso y solo se distingue 'BAIS', así que no puedo confirmar el contenido comercial ni asignar Valla o Fachada con certeza.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_095#0": {
+  "label": "Valla",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "SE GUARDAN MOTOS 3016207141",
+  "razon": "Cartel artesanal de servicio comercial (guarda de motos) con teléfono, sostenido por su propio poste clavado en el suelo junto a la reja, por lo que se clasifica como Valla.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_095#4": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Aviso pequeño y borroso sobre un poste o estructura en la vía con color amarillo y rojo, posible marca tipo 'Mayor' o similar, pero el contenido no se lee con claridad; hay señal comercial ambigua y el contenido no es legible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_095#7": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto borroso de color beige sobre el techo de un carro, sin señal comercial visible ni contenido legible; no identificable, es ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_095#3": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel naranja con texto oscuro e ilegible montado sobre un poste pequeño y morado, con apariencia de aviso de local, pero su contenido no se puede leer ni identificar en la imagen, por lo que no se puede determinar si es Valla o Fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_095#1": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "PROPIEDAD PRIVADA",
+  "razon": "Letrero informativo de propiedad privada sobre malla de reja, sin marca ni señal comercial; es un letrero secundario informativo y no se marca como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_075#10": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "YAMAHA",
+  "razon": "Logo y marca YAMAHA en letras corpóreas adosadas al muro del edificio del concesionario, por lo que es un aviso de fachada del negocio.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_075#15": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto pequeño y borroso sobre la reja/muro metálico gris, sin marca ni señal comercial visible; es ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_075#26": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto alargado rojo de muy baja resolución adosado a la pared de un local, sin marca ni texto identificable; no es posible determinar si es un aviso o un elemento arquitectónico, por lo que no se puede confirmar como publicidad, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_075#24": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso sobre un muro de pared; no se distingue ninguna marca, teléfono ni nombre comercial legible, por lo que no es posible determinar si es un aviso o ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_075#23": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: recorte borroso y pequeño de un objeto de color terracota sobre un poste de tránsito, sin señal comercial visible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_075#27": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Son unidades de aire acondicionado o condensadores montados sobre la fachada, sin marca ni señal comercial visible; se parecen a un aviso pero no lo son.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_075#19": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño, oscuro y borroso sobre la pared de una bodega; no se identifica contenido comercial ni estructura de aviso, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#9": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "agrofres sas",
+  "razon": "Letrero blanco con nombre de empresa adosado a la fachada de un local o edificio sobre el mercado, por lo que es un aviso de fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#30": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso sobre un muro o cortina metálica del local; no se distingue ninguna marca, logo ni texto comercial legible, por lo que no es identificable como aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#25": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "No identificable: objeto pequeño, oscuro y borroso adosado al muro de ladrillo junto a una cortina metálica, sin señal comercial legible; se trata de ruido de la detección y no se marca.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#48": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Recorte muy pequeño, oscuro y borroso dentro de una ventana con cortinas; no se identifica señal comercial ni estructura de aviso, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#5": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "BLOQUE 18",
+  "razon": "Placa con el nombre del edificio o bloque ('BLOQUE 18') adherida al muro del conjunto, que el equipo excluye como NoPublicidad; no es aviso comercial.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#1": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "pacardyl SUPERMERCADOS",
+  "razon": "Aviso con la marca Pacardyl Supermercados instalado sobre el muro/fachada superior del edificio del supermercado, adosado a la construcción y no sobre estructura independiente.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#49": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto muy pequeño y borroso, sin marca ni texto identificable; no se puede determinar si es un aviso ni qué estructura lo soporta, es ruido de la detección (no identificable).",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#33": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "ELCAN",
+  "razon": "Aviso de marca adosado sobre la pared de la fachada del edificio comercial, en una franja de letrero sobre los locales, con el nombre ELCAN visible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#20": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "CALYPSO",
+  "razon": "Aviso adosado sobre la cubierta/muro del edificio comercial (pared amarilla de la fachada con logo 'CALYPSO' en el borde superior), por lo que es un letrero principal de fachada, no una valla independiente.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#40": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Recorte muy oscuro y borroso en la pared de un local; no se identifica contenido comercial ni estructura de aviso con certeza, es ruido de la detección (no identificable).",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#13": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal roja con símbolo de hidrante y la palabra borrosa, probablemente de seguridad contra incendios (señal informativa sin marca comercial), adosada a la pared del edificio; no hay marca ni señal comercial legible, por lo que no se marca como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#42": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Bioque Naranja",
+  "razon": "Letrero de marca (logo y nombre Bloque Naranja) adosado sobre el muro del edificio; aunque podría ser el nombre del propio edificio, se trata de un logo comercial de proyecto y se identifica como aviso adosado a fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#21": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Aviso adosado a la fachada de ladrillo del local en la planta baja, con panel rectangular y franjas de texto ilegibles; estructura típica de letrero de local, aunque su contenido no se puede leer con claridad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#41": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Es un camión de carga con un panel o caja con diseño comercial, pero es un vehículo y la marca no se puede leer; los rótulos en vehículos no se marcan como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#46": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: recorte muy pequeño, oscuro y borroso, sin señal comercial visible que permita determinar si es un aviso; en la panorámica es una pequeña pieza blanca sobre la fachada del local, sin marca legible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#17": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Supermercados Cardy (logo y marca 'Cardy')",
+  "razon": "Aviso adosado sobre la fachada del supermercado, con logo y marca visibles, aunque la imagen es borrosa.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#22": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de tránsito en forma de rombo sobre poste, sin marca comercial visible; es una señal vial, no publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#0": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "pacardyl SUPERMERCADOS Miércoles y viernes 20% descuento en frutas y verduras Gracias por preferirnos Desde 1991 Con el mejor servicio www.pacardyl.com 318-716-7880",
+  "razon": "Gran lona publicitaria del supermercado instalada sobre el muro de ladrillo del edificio del establecimiento, por lo que es Fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#4": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "COMERCIALIZADORA, DOMICILIOS 281-730-40-28, 288-16-06",
+  "razon": "Letrero comercial adosado sobre la fachada/marquesina del local de la Comercializadora, con nombre del negocio y teléfonos.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#6": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Pacific Supermercados? Cacardyl Supermercados, Mi Pan",
+  "razon": "Aviso de marca Cacardyl Supermercados adosado a la fachada del local, sobre el muro bajo la marquesina del supermercado Paco.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#2": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "20% descuento en Frutas y Verduras Miércoles y Viernes",
+  "razon": "Aviso de promoción de un supermercado instalado adosado sobre la pared de la fachada del local, con contenido comercial legible (descuento en frutas y verduras), por lo que es Fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#34": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "El objeto enmarcado corresponde a la carrocería de un camión con gráficos y rótulos sobre el furgón; las marcas en vehículos no se marcan como publicidad, y no hay una estructura propia de valla ni un aviso adosado a fachada que lo justifique.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#28": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "BOOM Mega Mercado Comercial",
+  "razon": "Letras corpóreas con el nombre comercial BOOM instaladas sobre la fachada del edificio del centro comercial, por lo que es un aviso adosado al muro.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#16": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "CLEAN",
+  "razon": "Aviso rectangular adosado sobre el muro superior del local, sobre la entrada del centro comercial; muestra un nombre de marca (CLEAN) con logo, por lo que es un aviso de fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#39": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso sobre la pared de un local; no se distingue marca ni texto, así que no identificable como aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#8": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel tipo aviso adosado al muro de ladrillo sobre el local, similar a los demás letreros de la fachada, pero su contenido está borroso y no se puede leer ni identificar la marca.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#3": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "BLOQUE 25",
+  "razon": "Placa con el nombre del propio edificio (BLOQUE 25) sobre el muro de ladrillo; es nomenclatura del conjunto, no un aviso comercial, por lo que no se marca como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#32": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: recorte muy oscuro y borroso, con posible letrero adosado a la fachada de un local, pero sin contenido legible ni señal comercial clara.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#26": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel azul adosado a la pared de la edificación sobre el acceso, con un logo o texto comercial que no se lee por la borrosidad, así que no es posible confirmar el contenido.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#11": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "Punto de Encuentro en Caso de Emergencia. Bomberos: (604) 420 0220 Ext. 116. Cuadrante Policía: 300 ... 316 ...",
+  "razon": "Es un letrero informativo de emergencia (punto de encuentro, con teléfonos de Bomberos y Policía) sin marca ni negocio anunciado, adosado a un vidrio o pared, por lo que no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_059#36": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "LOCAL 72",
+  "razon": "Letrero informativo de numeración de local ('LOCAL 72') adosado al muro del edificio, sin marca, logo ni mensaje comercial, por lo que no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_092#11": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Es una marca pintada sobre el pavimento de la calle (demarcación vial), no un aviso; no tiene estructura de valla ni de fachada y el contenido no es identificable, así que es nomenclatura vial.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_092#12": {
+  "label": "Valla",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "314 733 3913",
+  "razon": "Placa con número de teléfono adherida bajo el panel vertical 'Entre Villas' sobre su propio poste en la vía, así que forma parte de una valla independiente.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_092#6": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de tránsito tipo R (reglamentaria, probablemente de estacionamiento restringido) sobre poste vial; no es aviso comercial y no contiene marca visible, por lo que no se marca como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_092#9": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Marca vial pintada en el pavimento (símbolo de tránsito sobre la calzada), sin señal comercial; no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_086#14": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso sobre la pared de ladrillo, sin marca ni señal comercial visible; no identificable, parece un buzón o caja de medidor adosada al muro.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_086#1": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "A",
+  "razon": "Es un letrero circular con borde metálico adosado a la fachada bajo el alero de la casa, pero el contenido está casi todo tapado por el follaje y solo se distingue una letra 'A', así que no se identifica la marca.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_086#12": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto muy pequeño, oscuro y borroso sobre el marco de la puerta, sin señal comercial identificable; no identificable, es ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_086#15": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto vertical con franjas rojas, azules y blancas tipo poste de barbería, sin marca ni nombre legible; por la regla del equipo el poste de barbería no cuenta como aviso y el objeto es ruido o poste de barbería sin contenido comercial identificable, adosado a la fachada de ladrillo.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_086#5": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "ARRIENDA SANTA MARIA LYDA",
+  "razon": "Cartel particular de arriendo pegado sobre la puerta de la fachada de ladrillo, lo que el equipo excluye como no publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_088#6": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto muy pequeño y borroso sobre la pared, sin señal comercial identificable; no identificable, es ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_088#12": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto borroso y lejano sobre una ventana o muro de un edificio; no se identifica contenido comercial ni estructura de aviso claramente, es ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_088#3": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "Calle 51",
+  "razon": "Placa de nomenclatura vial (señal de calle con flecha direccional) adosada a la pared; no es una señal comercial, es señal informativa de tránsito y no se marca.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_088#8": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso sobre la pared de un edificio, sin contenido identificable ni señal comercial clara; no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_088#9": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Placa verde con flecha y número de calle (tipo nomenclatura vial, 'Calle 61') adherida a la pared de la vivienda; es señalización de nomenclatura, no un aviso comercial, por lo que no se marca.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_082#3": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de tránsito de peatones (rombo amarillo con pictograma) sobre poste vial; no es publicidad, no comercial, no identificable como aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_072#19": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: el recorte es muy pequeño y oscuro, solo se intuyen formas de colores sobre lo que parece una pared o marco de vitrina de un local, sin contenido legible ni señal comercial clara.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_072#20": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Rótulo ilegible sobre el techo de una furgoneta de carga; es un rótulo de vehículo, que no se marca, y no se puede identificar su contenido.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_072#16": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Parece un letrero pequeño adosado al muro de ladrillo de la bodega, sobre una puerta, con elementos verdes y blancos, pero el contenido no se puede leer por lo borroso y pequeño de la imagen.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_072#13": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Es un pequeño letrero verde adosado a la carrocería de un camión (vehículo), y el contenido no se lee; las marcas en vehículos no se marcan como publicidad, así que se descarta como no publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_072#2": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "SERKA",
+  "razon": "Aviso adosado sobre la pared de la fachada del local (sobre la puerta de acceso), con nombre de marca legible; es el letrero principal del negocio.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_072#4": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "PZ",
+  "razon": "Panel comercial con el logo 'PZ' y una imagen de producto, adosado a la pared de la bodega sobre el acceso del local; la lectura del resto del texto es borrosa.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_066#4": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto oscuro y borroso sobre un poste, sin señal comercial visible; parece una señal de tránsito de rombo naranja y no hay marca ni texto legible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_066#0": {
+  "label": "Valla",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Nuevo Poblado Apartamentos Torre Baena 61-68m2 Itagüí, Sector Las Chimeneas 310 834 3012",
+  "razon": "Aviso de proyecto inmobiliario con teléfono y marca sobre un panel vertical independiente sostenido por un poste propio frente a la reja, por lo que es Valla.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_066#3": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de tránsito amarilla de advertencia (figura de vehículo y flecha), sin marca comercial; no es publicidad, es señalización vial sobre poste.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_066#1": {
+  "label": "Valla",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Entre Villas Apartamentos. Este proyecto te conecta con lo mejor de la ciudad. Llega rápido 314 739 3919",
+  "razon": "Aviso de proyecto inmobiliario instalado sobre su propio poste independiente frente a la reja, con teléfono y marca visibles, por lo que es Valla.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#15": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel azul con un logo blanco ilegible adosado a la pared de la fachada de un local; se ve la estructura de aviso sobre el muro, pero el contenido no se lee, así que no es Dudoso por ser un aviso identificable de fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#43": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto oscuro y borroso sobre un poste o muro, sin señal comercial visible que permita determinar si es un aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#44": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto muy pequeño y borroso en la imagen A, no identificable; en la imagen B es una señal vertical roja lejana sin marca visible, sin estructura clara de aviso; no identificable, se trata como ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#7": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "$300.000",
+  "razon": "Panel publicitario enmarcado y adosado a la pared de la fachada del edificio, con una oferta comercial (imagen de piernas, precio de $300.000) y texto parcialmente ilegible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#47": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto muy pequeño y borroso sobre un muro, sin señal comercial legible ni estructura clara de aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#20": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Es un panel rectangular con letras decorativas montado sobre el borde del toldo de un local en la fachada del edificio, pero el contenido es borroso y no se puede leer ni identificar la marca.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#18": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Precio de Fábrica, Tel. 311 800 9149, www.kassandrafashion.com",
+  "razon": "Letrero rojo con nombre de negocio, teléfono y web, adosado a la fachada de la tienda de ropa en el primer nivel, por lo que corresponde a Fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#31": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso sobre un poste de señal de tránsito o similar, sin marca ni señal comercial visible; no identificable como aviso, se trata de ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#10": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de tránsito de prohibido estacionar ('NO ESTACIONAR EN ESTA CUADRA') sobre poste vial; es señalización informativa, no publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#13": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel azul con logo amarillo adosado a la pared del edificio sobre un local comercial, es un aviso de fachada, pero el texto es borroso y no se puede leer el nombre de la marca.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#28": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de tránsito de prohibición de estacionar (letra R en círculo rojo sobre poste vial), no es publicidad; la imagen es borrosa y no muestra señal comercial.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#9": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "ESTETICAS JANETH 3017917272 DEPILACIÓN LÁSER DIODO Tu primera sesión desde $5.000 Agenda 3017917272",
+  "razon": "Pendón publicitario de una clínica de estética adosado a la fachada del local, con teléfono y oferta visibles, aunque parcialmente tapado por un poste de alumbrado.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#8": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de tránsito amarilla de semáforo adelante (advertencia vial sin marca comercial), montada en poste propio; no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_074#1": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Tienda del peluquero IST",
+  "razon": "Letrero principal del negocio adosado sobre el muro de ladrillo de la fachada del local, con nombre de negocio y logo visibles.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_069#8": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño, borroso y sin señal comercial visible sobre el pavimento; no identificable, es ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_094#7": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto muy pequeño y oscuro sobre la pared de un edificio residencial, sin señal comercial legible ni estructura clara de aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_094#2": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "No identificable: objeto oscuro y borroso con una letra 'R' visible sobre un fondo rojo, sin marca ni señal comercial clara; podría ser un pequeño letrero adosado a la puerta, pero no es posible confirmarlo.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_094#9": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto rojo borroso y pequeño sobre la fachada, sin contenido legible ni señal comercial clara que permita confirmar si es un aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_094#13": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "ESSCP202",
+  "razon": "Código alfanumérico en una caja negra montada sobre un poste de alumbrado/tendido eléctrico; no es una marca ni señal comercial, parece equipo técnico o identificador de infraestructura, no publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_076#15": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "RESTAURANTE Y ASADERO LA ESQUINA DEL SABOR",
+  "razon": "Letrero principal del restaurante instalado sobre la fachada del local, con nombre del negocio y logo legibles.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_076#6": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Hoja o cartel de menú pegado sobre la pared del local, sin marca ni logo legible; no es un aviso estructural y su contenido no se identifica con claridad, así que es ambiguo y se deja como no publicidad por ser ruido borroso sin señal comercial clara.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_076#7": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Aviso tipo folleto o panel con imágenes de producto (comida/panadería) instalado sobre la reja de la fachada del local; hay señal comercial visible pero el contenido textual no se lee por la oscuridad y el borroso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_076#11": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto muy pequeño, oscuro y borroso sobre la pared de la puerta de un local; no se puede identificar su contenido ni se distingue una señal comercial clara, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_076#25": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: recorte borroso y oscuro de un objeto pequeño adosado a la pared de una casa, sin señal comercial legible ni marca visible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_076#16": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto metálico estrecho adosado a la pared (caja de contadores o buzón de servicio), sin señal comercial visible ni contenido legible; no identificable como aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_076#12": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Caja metálica de contador eléctrico o tablero adosado a la pared de ladrillo; solo se intuye un garabato borroso sin señal comercial clara, no identificable como aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_076#2": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de tránsito de estacionamiento prohibido (P tachada, horario 9:00 A.M. a 10:00 P.M.) instalada sobre un poste vial; es señal informativa sin marca comercial, no publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_076#4": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel amarillo-verde con texto ilegible sujeto a la reja de la ventana de un local, con apariencia de aviso pero sin contenido identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_076#22": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto pequeño, oscuro y borroso sobre la pared junto a la puerta de un local, con un posible logo o texto diminuto que no se puede leer, sin señal comercial clara.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_089#6": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño, oscuro y borroso sobre un muro de vivienda; no se identifica contenido ni señal comercial clara, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_089#3": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de prohibido estacionar (P tachada) sobre puerta de garaje; es señal de tránsito/informativa sin marca comercial, no es publicidad, y es pequeña y oscura, no identificable como aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_089#8": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto pequeño, oscuro y borroso adosado a una pared de vivienda sin señal comercial visible; se trata de ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_089#0": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de prohibido parquear (PARQUEAR con símbolo de prohibición) sobre la reja/puerta metálica del garaje; es señal vial/informativa sin marca comercial, no publicidad, y el objeto es pequeño y oscuro.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_058#2": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "PAPELERIA EL ROBLE",
+  "razon": "Letrero comercial de papelería con nombre de negocio y teléfono, adosado a la pared de ladrillo del edificio, por lo que es un aviso de fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_058#1": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal amarilla de tránsito en forma de rombo sobre poste, con una mancha blanca ilegible; es una señal vial, no un aviso publicitario, y no se identifica ninguna marca.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_058#9": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto borroso y pequeño, de textura de ladrillo o madera en la fachada de un edificio; no se identifica ninguna señal comercial ni contenido legible, por lo que no se puede determinar si es un aviso; no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_058#8": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto rojo muy pequeño, oscuro y borroso sobre la pared de una casa; no se puede identificar ni se distingue una señal comercial clara, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_057#11": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto alargado rojo con una figura ilegible y sin marca visible, adosado a la reja o pared de un local; es muy pequeño y borroso en el recorte, no se puede determinar si es un aviso comercial o un objeto decorativo, por lo que no se marca como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_057#14": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto alargado azul-turquesa muy oscuro y borroso sobre la puerta o marco de una vivienda, sin contenido legible ni señal comercial clara; no identificable como aviso, ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_057#1": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "Carrera 55",
+  "razon": "Placa de nomenclatura vial (nombre de calle) adosada a la pared; es señalización informativa sin marca comercial, por lo que no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_057#2": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "CARRERA 55",
+  "razon": "Placa de nomenclatura vial con el número de dirección adosada al muro; no hay señal comercial, por lo que no es publicidad (NoPublicidad).",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_057#12": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto muy pequeño y borroso sobre la pared de la fachada; no se puede identificar su contenido ni se observa señal comercial, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_057#0": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "SERVICIOS, Gina Brow, Agenda tu cita 302 316 13 22, depilación, cejas, pestañas",
+  "razon": "Aviso de servicios de estética adosado sobre la pared de la fachada del local, con teléfono y nombre comercial visibles.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_057#4": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Pendón vertical con impresión de varios bloques rojos y blancos, colgado de la baranda de un balcón en la fachada del edificio; parece un aviso, pero su contenido no se puede leer por la baja resolución.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_083#14": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel vertical rojo con letras amarillas adosado a la pared de un edificio junto a la puerta, con apariencia de letrero de local, pero el contenido es borroso y no se puede leer.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_083#15": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel amarillo vertical adosado a la pared/columna de un local en la fachada, con textos pequeños e ilegibles en la imagen; parece un aviso comercial de tipo letrero de local, pero su contenido no se puede leer, así que no es Dudoso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_083#17": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Fragmento pequeño y borroso sobre el pavimento, parece una marca vial pintada en el asfalto; no hay señal comercial identificable, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_083#12": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto oscuro y borroso sobre el dintel de un local; no se distingue contenido ni señal comercial clara, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_083#18": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto pequeño y borroso sobre la pared de una casa, sin señal comercial legible ni estructura clara de aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_083#7": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto muy pequeño, oscuro y borroso en la puerta de un local, sin señal comercial identificable; no identificable, se trata como ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_077#8": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "Distribuidora de madera y condimentos 25/28-28/30 Recorte y original; Implementos de carpintería, Ganchos, Hojas para sierra, Cuchillería, Condimentos y de general, Venta de maquinaria",
+  "razon": "Rótulo legible en la caja de un camión; los rótulos en vehículos no se marcan como publicidad, por lo que no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_077#4": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "TIENDA LA 9A",
+  "razon": "Letrero luminoso con nombre de negocio adosado a la fachada de ladrillo sobre el local, con logo de Bancolombia debajo; aviso principal del local adosado al muro.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_077#11": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Pequeño sticker o etiqueta con números de teléfono pegada sobre un poste de concreto; muestra una señal comercial (teléfonos) pero el contenido no se lee y existe duda real de que sea publicidad, aunque podría ser un aviso adherido al poste.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_077#17": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Marca vial pintada en el asfalto (símbolo de tránsito/estacionamiento) junto a un vehículo blanco; es una señal de tránsito o nomenclatura vial, sin marca comercial visible, por lo que no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_077#0": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "Estadio del Barrio / CANCHA SANTA MARÍA / logo Gatorade",
+  "razon": "Letrero de una cancha deportiva de barrio con patrocinador, que la política del equipo excluye de publicidad; no se marca.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_077#1": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "Estadios del Barrio",
+  "razon": "El letrero es el nombre de la cancha deportiva del barrio sobre la estructura de techo de la cancha, que es un letrero secundario/informativo del escenario deportivo y no un aviso comercial, por lo que no se marca.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_077#13": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "G",
+  "razon": "Panel rojo con logo borroso sujeto a la malla metálica de una cancha deportiva del barrio; es un letrero de patrocinador de cancha, por lo que no se marca como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_071#2": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto rojo muy pequeño, oscuro y borroso sobre la pared de la fachada; no se puede identificar su contenido ni se distingue una señal comercial clara, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_071#0": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "CURADURIA URBANA PRIMERA DE ITAGUI WILLIAM GIRALDO MEJIA. INFORMA A TERCEROS INTERESADOS QUE Mediante radicado N 05360-1 23-0186 de 10 de octubre de 2023. Solicito: Licencia de Construcción. Modalidad: Ampliación y modificación. Uso: Residencial. MUNICIPIO DE ITAGUI-ANTIOQUIA. ITAGUI, 17 DE ABRIL DE 2024. SEÑORA: STEHER MARIN PALACIOS. ASUNTO: CERTIFICADO DE NOMENCLATURA",
+  "razon": "Es un aviso oficial informativo de una curaduría (licencia de construcción) sujeto a una lona azul sobre un cerramiento de obra, sin marca comercial ni fin publicitario, por lo que no se clasifica como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_071#4": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "58 12",
+  "razon": "Placa de número de casa con adorno metálico sobre la puerta; señal informativa sin marca comercial, no identificable como aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_071#6": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: recorte muy pequeño y borroso sobre una pared de ladrillo junto a un poste de madera, sin señal comercial legible; es ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_084#7": {
+  "label": "Valla",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel vertical con imagen y posible logo sobre una estructura metálica propia tipo tótem, con el contenido demasiado borroso para leerlo.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_084#4": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Pendón vertical amarillo sujeto a un poste de la vía, similar a los demás avisos de la calle; el contenido no se puede leer en el recorte, así que la estructura queda ambigua entre valla y fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_084#8": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal diamante en blanco sobre poste, sin marca ni señal comercial visible; parece señal de tránsito o informativa, no identificable como aviso publicitario.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_100#3": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "No identificable: es un panel pequeño y oscuro sobre un poste, con una figura roja sobre fondo azul, sin marca, logo ni texto comercial visible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_100#5": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto pequeño y borroso sobre un poste, sin señal comercial visible que permita confirmar que sea un aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_096#15": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto pequeño y borroso sobre un poste; la imagen muestra una señal de tránsito o informativa en la vía, sin señal comercial visible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_096#9": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "TRASTEOS 3215... ",
+  "razon": "Letrero pequeño de tipo sticker blanco con texto 'TRASTEOS' y número telefónico pegado sobre un poste de energía; no es un aviso de estructura propia y no hay certeza de que sea publicidad, aunque la señal comercial de servicio sugiere anuncio.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_096#13": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "INICIO DE OBRA",
+  "razon": "Señal informativa de obra sobre panel verde de cerramiento; no tiene marca ni señal comercial, es informativa y no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_096#5": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Placa verde pequeña y borrosa con un logotipo blanco sobre el muro oscuro junto a la entrada del parqueadero, sin estructura de valla; la señal comercial es incierta y su contenido no se puede leer.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_096#3": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño, borroso y oscuro sobre una reja de malla metálica; no se identifica ninguna señal comercial, no identificable, es ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_096#11": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "No identificable: panel pequeño y borroso adherido a un poste de energía junto a una reja, sin señal comercial legible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_096#18": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso sobre la puerta de vidrio; no se puede identificar su contenido ni se distinguen marca o señal comercial, se trata de ruido de la detección (no identificable).",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_096#8": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "TRASTEOS 312 (resto del número ilegible)",
+  "razon": "Pequeño letrero comercial de servicio de trasteos con teléfono, adherido a un poste de cableado y no a una fachada ni a una estructura propia, por lo que su categoría es ambigua.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_099#2": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Pequeño letrero en reja de cancha deportiva de barrio con un logo de equipo de fútbol sala; los letreros de canchas y escenarios deportivos del barrio no se marcan como publicidad, y el contenido no es legible con claridad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_099#12": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Tela roja colgada para secar sobre la fachada de ladrillo; no hay señal comercial ni estructura de aviso, por lo que no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_099#4": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso: se ve un pictograma de prohibición y letras ilegibles sobre una placa en la reja de la cancha; es un letrero informativo del barrio (canchas y escenarios deportivos), no un aviso comercial identificable, por lo que no se marca como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_093#1": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "INTERNET tigo TELEVISION TELEFONIA 3244703068",
+  "razon": "Es un adhesivo comercial de Tigo (marca, productos y teléfono) pegado sobre un poste de servicios públicos, un soporte que no corresponde a una valla propia ni a una fachada, por lo que la categoría es ambigua.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_093#2": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "INTERNET EIGO TELEVISION TELEFONIA 3144264431",
+  "razon": "Adhesivo de promoción de servicios de internet y televisión con teléfono de contacto, pegado sobre un poste de concreto; hay señal comercial clara, pero es un calcomanía pequeña en poste y no una estructura propia de valla ni un aviso adosado a fachada, por lo que la categoría es ambigua.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_093#3": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "ENTE",
+  "razon": "Panel naranja con letras parcialmente tapadas por follaje; parece un aviso, pero no se identifica la marca ni la estructura que lo soporta, así que queda como dudoso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_060#15": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto oscuro, sin contenido ni señal comercial visible; podría ser un techo o marquesina en voladizo sobre la fachada, no un aviso identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_060#4": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de tránsito o nomenclatura vial (placa de calle 'Carrera 57' con flecha) adosada a la pared del edificio; es informativa sin marca comercial, no es publicidad, aunque la reubico como no identificable por su tamaño y borrosidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_060#1": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "ANDINA SUPERMERCADO COLPRI",
+  "razon": "Aviso comercial con nombre de supermercado instalado sobre la fachada del local, adosado al muro sobre el acceso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_056#10": {
+  "label": "Valla",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel blanco de gran formato sobre estructura metálica roja tipo monoposte, sin contenido legible; la estructura propia indica valla, aunque el contenido no se lee.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_056#8": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto borroso sobre una ventana o fachada de edificio; no se identifica contenido comercial ni estructura de aviso, es ruido de la detección y no se marca como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_068#3": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto pequeño y borroso sobre lo que parece un poste o muro, sin señal comercial visible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_068#4": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: panel rectangular con rejilla metálica sobre muro de fachada, tipo caja de medidores o ventilación, sin señal comercial visible",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_080#0": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto muy pequeño y borroso sobre la fachada de un edificio, sin señal comercial legible ni estructura clara de aviso.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_085#3": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "Calle 69C",
+  "razon": "Señal de nomenclatura vial (placa de calle con flechas de dirección) adosada a la pared de un edificio de ladrillo; no tiene marca comercial visible, salvo un logo pequeño y borroso en el extremo izquierdo que no permite identificar un negocio, por lo que no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_085#12": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso sobre muro de ladrillo, parece una señal verde con marco tipo placa informativa de nomenclatura vial; no se puede identificar contenido comercial, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_085#5": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y oscuro sobre una reja, sin marca ni señal comercial legible; no identificable, se trata como ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_085#15": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto pequeño, oscuro y borroso sobre un poste blanco delgado, sin ninguna señal comercial visible ni marco de valla claro; podría ser una ventana, reja o ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_085#7": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "Carrera 92B",
+  "razon": "Señal de nomenclatura vial (placa verde con nombre de calle y flecha de sentido de tránsito) adherida a la pared de una casa; es señal informativa sin marca comercial, no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_085#11": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso sobre muro de ladrillo, sin señal comercial visible ni contenido identificable; no identificable, ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_063#0": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "Calle 65",
+  "razon": "Señal de nomenclatura vial (placa de calle con flecha) adosada a la pared de una casa; no contiene marca comercial, por lo que no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_067#7": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": true,
+  "texto": "VillaSol",
+  "razon": "Es el nombre del propio edificio (Apartamentos VillaSol) en el muro de la portería, con letras corpóreas; por la regla del equipo es NoPublicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_067#1": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Compra fácil con sistecrédito",
+  "razon": "Aviso de marca 'sistecrédito' adosado a la pared de la fachada del local, con marca y mensaje comercial legibles.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_067#3": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso sobre la pared de un local, sin señal comercial legible; no identificable como aviso ni como ruido claro, se trata de ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_061#5": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel oscuro y borroso adosado a la fachada sobre un marco tipo letrero de local, con posible nombre de negocio ilegible; hay una señal comercial probable pero el contenido no se lee, por lo que es ambiguo.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_061#0": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de tránsito de tope o resalto (ondulación de vía) con grafiti sin marca comercial, sostenida por un poste vial; no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_061#4": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: panel pequeño y borroso adosado al muro de ladrillo de la planta baja, sin marca, texto ni señal comercial legible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_073#2": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y oscuro adherido a un poste de madera; muestra una etiqueta blanca con números (posiblemente de servicios o nomenclatura), sin marca ni señal comercial clara; no identificable como aviso, se trata como ruido de la detección.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_073#4": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: fragmento borroso de una estructura metálica o barandilla sobre la pared de ladrillo, sin señal comercial visible.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_091#21": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Pintura de flechas direccionales sobre el pavimento, es una señal de tránsito y no hay ninguna señal comercial visible; no es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_091#19": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Recuperamos Residuos Plásticos - IngePol - Creamos soluciones innovadoras",
+  "razon": "Banner o adhesivo con logo e nombre de la empresa IngePol instalado sobre la vitrina del local, por lo que es un aviso de fachada del negocio.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_091#23": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Recorte de pavimento con una línea de demarcación vial blanca desgastada; no hay señal comercial ni estructura de aviso, objeto no identificable como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_091#11": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "Dollarcity",
+  "razon": "Letrero corpóreo con el nombre de la tienda Dollarcity adosado a la fachada del local, con marca comercial legible; aunque un poste lo atraviesa, la marca se identifica y está sobre el muro del establecimiento.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_091#24": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: objeto pequeño y borroso sobre un poste, con una tela o bandera sin marca ni señal comercial legible; no se puede determinar si es publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_091#6": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "KAZABE",
+  "razon": "Letrero con nombre de negocio adosado a la pared de ladrillo del edificio del local comercial, por lo que se clasifica como aviso de fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_091#14": {
+  "label": "Fachada",
+  "es_publicidad": 1.0,
+  "legible": true,
+  "texto": "IngePol Creamos soluciones Inmobiliarias y Sistemas",
+  "razon": "Aviso con logo y nombre de la empresa IngePol adherido al vidrio de la fachada de la oficina, que es un aviso del propio local, por lo que es Fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_091#15": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "Recu...vamos ...es ...ues Plásticos",
+  "razon": "Calcomanía informativa de vitrina sobre el cristal de la fachada del local IngePol, un letrero secundario que no es el aviso principal del negocio, por lo que no se marca.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_079#3": {
+  "label": "Dudoso",
+  "es_publicidad": 1.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Panel amarillo vertical adosado al muro de un edificio, con texto y números borrosos que parecen teléfonos o datos comerciales, pero el contenido no se puede leer.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_090#4": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Marca pintada o grafiti sobre ladrillo sin señal comercial clara ni estructura de aviso; el contenido no es legible, así que se trata como ruido de la detección y no se marca como publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_087#2": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Objeto pequeño y borroso colgado de cables entre la red eléctrica; no se puede identificar contenido ni señal comercial clara, no identificable.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_055#12": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "no identificable: recorte oscuro y borroso sin señal comercial visible; parece un banderín o ruido de la detección, no un aviso soportado por estructura propia ni fachada.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_064#2": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Señal de prohibido estacionar (círculo rojo con P) sobre la puerta de garaje; es señal de tránsito/informativa sin marca comercial, no publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_054#1": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Letrero informativo pequeño adosado a la pared del edificio, con un ícono de puerta de garaje y texto ilegible; es un letrero secundario sin marca comercial, no publicidad.",
+  "probabilities": {},
+  "backend": "haiku"
+ },
+ "L6_054#4": {
+  "label": "NoPublicidad",
+  "es_publicidad": 0.0,
+  "legible": false,
+  "texto": "",
+  "razon": "Pequeño letrero verde borroso adosado al muro de un edificio residencial; parece una placa de nomenclatura o indicación vial, con texto ilegible, sin certeza de que sea un aviso comercial.",
+  "probabilities": {},
+  "backend": "haiku"
+ }
+}
