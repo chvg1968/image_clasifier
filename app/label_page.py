@@ -88,7 +88,14 @@ paint();
 """
 
 
-def build(out_dir: Path, n_control: int = 30, seed: int = 7) -> Path:
+def build(out_dir: Path, n_control: int = 30, seed: int = 7, muestra: int = 0, excluir: Path | None = None) -> Path:
+    """Con muestra > 0 arma una muestra aleatoria de objetos (sin los ya etiquetados en
+    `excluir`), que mide la precisión real del lote en vez de solo los casos difíciles."""
+    ya = set()
+    if excluir:
+        import csv
+
+        ya = {(r["imagen"], int(r["id"])) for r in csv.DictReader(open(excluir, encoding="utf-8"))}
     disagree, agree = [], []
     for rj in sorted(out_dir.glob("*/resultado.json")):
         res = json.loads(rj.read_text())
@@ -96,14 +103,20 @@ def build(out_dir: Path, n_control: int = 30, seed: int = 7) -> Path:
             cls = r["clasificacion"]
             if any(c.get("razon", "").startswith("filtrado") for c in cls.values()):
                 continue
+            if (rj.parent.name, r["id"]) in ya:
+                continue
             labs = {c["label"] for c in cls.values()}
             (disagree if len(labs) > 1 else agree).append((rj.parent.name, res["imagen"], r))
 
-    random.Random(seed).shuffle(disagree)
-    control = random.Random(seed).sample(agree, min(n_control, len(agree)))
-    # Desacuerdos y controles mezclados, para que quien etiqueta no sepa cuál es cuál.
-    items = [("desacuerdo", *x) for x in disagree] + [("control", *x) for x in control]
-    random.Random(seed + 1).shuffle(items)
+    if muestra:
+        pool = disagree + agree
+        items = [("aleatorio", *x) for x in random.Random(seed).sample(pool, min(muestra, len(pool)))]
+    else:
+        random.Random(seed).shuffle(disagree)
+        control = random.Random(seed).sample(agree, min(n_control, len(agree)))
+        # Desacuerdos y controles mezclados, para que quien etiqueta no sepa cuál es cuál.
+        items = [("desacuerdo", *x) for x in disagree] + [("control", *x) for x in control]
+        random.Random(seed + 1).shuffle(items)
 
     # Ventana de contexto por objeto (abre cada panorámica una sola vez).
     by_image: dict[str, list] = {}
@@ -134,7 +147,7 @@ def build(out_dir: Path, n_control: int = 30, seed: int = 7) -> Path:
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Etiquetado {out_dir.name}</title><style>{CSS}</style></head><body>
 <header>
 <h1>Etiquetado manual de avisos</h1>
-<div class="muted">Izquierda: el objeto. Derecha: sus alrededores, con el objeto en rojo. Elige la categoría correcta según los criterios del proyecto.
+<div class="muted">Izquierda: el objeto. Derecha: sus alrededores, con el objeto en rojo. Elige la categoría correcta según los criterios del proyecto.<br><b>Regla de oro:</b> Valla o Fachada solo si lees con claridad el nombre, la marca o el mensaje, y no hay duda de que es un aviso. Si se ve que es un letrero o aviso pero no se lee, o hay duda → Dudoso (aunque sea pequeño). NoPublicidad solo si claramente no es aviso (vehículo, señal de tránsito o informativa, nomenclatura) o es una mancha irreconocible.
 Atajos: teclas 1–4 etiquetan el siguiente pendiente. Lo que marques se guarda en este navegador.</div>
 <div class="bar"><div id="prog"></div></div>
 <div class="row"><b id="cnt"></b>
@@ -147,7 +160,7 @@ Atajos: teclas 1–4 etiquetan el siguiente pendiente. Lo que marques se guarda 
 <script>{JS}</script></body></html>"""
     path = out_dir / "etiquetar.html"
     path.write_text(page, encoding="utf-8")
-    print(f"{len(disagree)} desacuerdos + {len(control)} controles = {len(items)} objetos")
+    print(f"{len(items)} objetos ({'muestra aleatoria' if muestra else 'desacuerdos + controles'})")
     return path
 
 
@@ -155,5 +168,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("out_dir", nargs="?", default="output_v2")
     ap.add_argument("--controles", type=int, default=30)
+    ap.add_argument("--muestra", type=int, default=0, help="N objetos al azar en vez de desacuerdos")
+    ap.add_argument("--excluir", type=Path, help="CSV de etiquetas ya hechas, para no repetirlas")
     a = ap.parse_args()
-    print(build(Path(a.out_dir), a.controles))
+    print(build(Path(a.out_dir), a.controles, muestra=a.muestra, excluir=a.excluir))

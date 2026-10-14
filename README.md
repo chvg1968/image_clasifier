@@ -61,10 +61,11 @@ Para agregar un ejemplo, pon la imagen con el aviso enmarcado en `assets/images_
 
 ## Reglas de la categoría final
 
-- `NoPublicidad`: vehículos, señales de tránsito o informativas y objetos que no son avisos. Van a `descartados` y no se dibujan.
-- `NoPublicidad` también incluye los objetos que no se pueden identificar y no muestran ninguna señal comercial.
-- `Dudoso`: el objeto tiene alguna señal comercial pero no es claro si es publicidad, o es claramente un aviso que no se puede leer. Una Valla ilegible sigue siendo Valla, porque se reconoce por su estructura.
-  - Con OpenAI también pasa a Dudoso cuando la confianza de la categoría es menor que 0.6.
+**Regla de oro (decisión del equipo):** un objeto solo es Valla o Fachada si se lee con claridad el nombre, la marca o el mensaje principal, y no hay duda de que es un aviso publicitario. Vale también para las vallas.
+
+- `Dudoso`: se ve que es un letrero o aviso, pero no se lee con claridad, o hay duda de que sea publicidad. Incluye letreros pequeños e ilegibles en la fachada de un local.
+- `NoPublicidad`: vehículos, señales de tránsito o informativas, nomenclatura, y manchas imposibles de reconocer. Van a `descartados` y no se dibujan.
+- Con Haiku, la categoría no la elige el modelo: Haiku responde `tipo` (aviso / posible_aviso / no_aviso), `ubicacion`, `texto` y `lectura_clara`, y `haiku_label` en `app/classify.py` aplica la regla.
 - Los criterios completos están en `CRITERIOS`, dentro de `app/classify.py`.
 
 ## Limitaciones conocidas
@@ -77,6 +78,13 @@ Para agregar un ejemplo, pon la imagen con el aviso enmarcado en `assets/images_
 ```bash
 .venv/bin/python -m app.label_page output_v2          # genera output_v2/etiquetar.html
 .venv/bin/python -m app.evaluate output_v2 ~/Downloads/etiquetas_manuales.csv
+.venv/bin/python -m app.label_page output_v4 --muestra 150 --excluir ~/Downloads/etiquetas_manuales.csv   # muestra aleatoria
+```
+
+Configuración recomendada para lotes nuevos (solo Haiku, contexto a 768 px):
+
+```bash
+CONTEXT_MAX_SIDE=768 .venv/bin/python -m app assets/images --classifier haiku
 ```
 
 `etiquetar.html` muestra los objetos en los que Haiku y OpenAI no coinciden, mezclados con 30 acuerdos de control. Por defecto oculta las respuestas de los modelos. Las etiquetas se guardan en el navegador y "Descargar CSV" las exporta. `app.evaluate` calcula cuánto acierta cada clasificador (haiku, openai y final) contra esas etiquetas.

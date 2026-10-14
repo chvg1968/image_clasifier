@@ -31,14 +31,18 @@ esté junto a un negocio.
 - Fachada: aviso adosado, pintado o instalado sobre la pared, columna, muro, marquesina, \
 toldo o vitrina de un edificio o local (letreros de negocio, pendones en fachada, \
 directorios de locales, avisos de "se vende/se arrienda" en el edificio).
-- Dudoso: el objeto muestra alguna señal comercial (marca, logo, nombre de negocio, teléfono, \
-producto, "se vende/arrienda", panel típico de aviso) pero hay ambigüedad real sobre si es \
-publicidad, o se sabe que es un aviso pero su contenido no se puede leer (borroso, lejano o \
-casi todo tapado). Dudoso debe ser poco frecuente.
+- Dudoso: todo lo que parece publicidad pero no cumple la regla de oro: hay duda de que \
+sea realmente un aviso publicitario, o es un aviso pero su contenido no se lee con claridad \
+(borroso, lejano, muy pequeño, de canto, casi todo tapado).
+
+REGLA DE ORO (decisión del equipo): un objeto solo es Valla o Fachada si una persona \
+lo puede leer con claridad —nombre del negocio, marca o mensaje principal— y no hay \
+ninguna ambigüedad de que es un aviso publicitario. Esto vale también para las vallas: \
+una valla cuyo contenido no se lee es Dudoso.
 
 Reglas:
-- Un aviso parcialmente tapado (por un árbol, un semáforo, un vehículo) cuyo contenido o \
-marca todavía se identifica NO es Dudoso: clasifícalo por su ubicación.
+- Un aviso parcialmente tapado (por un árbol, un semáforo, un vehículo) cuya marca o \
+nombre todavía se lee con claridad NO es Dudoso: clasifícalo por su ubicación.
 - Un objeto tan pequeño, oscuro o borroso que no se puede saber qué es, y sin ninguna señal \
 comercial visible, NO es publicidad (no se marca): es ruido de la detección.
 - NO son publicidad (no se marcan): marcas o rótulos en vehículos (buses, camiones, \
@@ -59,6 +63,10 @@ class Classification:
 
     def to_dict(self) -> dict:
         return asdict(self)
+
+
+# Lado mayor de la ventana de contexto enviada a la API. 768 px cuesta ~4× menos tokens que 1568.
+CONTEXT_MAX_SIDE = int(os.getenv("CONTEXT_MAX_SIDE", "1568"))
 
 
 def _b64(img: Image.Image, max_side: int = 1568) -> str:
@@ -108,23 +116,24 @@ def _decide(es_pub: float, label: str, legible: bool | None, no_pub_below: float
         return "NoPublicidad"
     if es_pub < dudoso_below:
         return "Dudoso"
-    if legible is False and label != "Valla":  # una valla se reconoce por su estructura aunque no se lea
+    if legible is False:  # regla de oro: Valla o Fachada solo si se lee con claridad
         return "Dudoso"
     return label
 
 
 PREGUNTA = (
-    "¿El objeto enmarcado en rojo es un aviso publicitario? Usa es_publicidad=true solo si ves "
-    "una señal comercial positiva (marca, logo, nombre de negocio, teléfono, producto, 'se vende/"
-    "arrienda', o una estructura típica de aviso como el marco de una valla o el panel de un letrero "
-    "de local). Usa es_publicidad=false para vehículos, señales de tránsito o informativas, semáforos, "
-    "grafitis sin marca, ventanas, rejas, y para objetos tan pequeños o borrosos que no se puede saber "
-    "qué son (en 'razon' escribe 'no identificable'). Usa categoria='Dudoso' solo si es claramente un "
-    "aviso cuyo contenido no se lee, o si hay una señal comercial pero dudas real de que sea publicidad. "
-    "Marca legible=false si no se puede leer ni identificar su contenido. En 'texto' transcribe lo "
-    "legible (vacío si nada). En 'razon' explica en una frase, mencionando la estructura que lo soporta."
+    "Responde sobre el objeto enmarcado en rojo:\n"
+    "1. tipo: 'aviso' si es claramente un aviso publicitario (letrero de negocio, valla, pendón, "
+    "marca o producto anunciado); 'posible_aviso' si parece un aviso pero no estás seguro; "
+    "'no_aviso' si es un vehículo, señal de tránsito o informativa, semáforo, grafiti sin marca, "
+    "ventana, reja, o algo tan pequeño o borroso que no se sabe qué es.\n"
+    "2. ubicacion: 'Valla' si está en una estructura propia e independiente; 'Fachada' si está sobre "
+    "un edificio o local.\n"
+    "3. texto: transcribe solo lo que realmente lees (vacío si nada). No adivines ni completes palabras.\n"
+    "4. lectura_clara: true solo si el nombre del negocio, la marca o el mensaje principal se lee "
+    "sin esfuerzo y sin adivinar; false si está borroso, lejano, cortado o solo se intuye.\n"
+    "5. razon: una frase, mencionando la estructura que lo soporta."
 )
-
 
 # --------------------------------------------------------------------------- #
 # Claude Haiku 5.5
@@ -133,15 +142,24 @@ PREGUNTA = (
 HAIKU_SCHEMA = {
     "type": "object",
     "properties": {
-        "es_publicidad": {"type": "boolean"},
-        "categoria": {"type": "string", "enum": LABELS},
-        "legible": {"type": "boolean"},
+        "tipo": {"type": "string", "enum": ["aviso", "posible_aviso", "no_aviso"]},
+        "ubicacion": {"type": "string", "enum": ["Valla", "Fachada"]},
         "texto": {"type": "string"},
+        "lectura_clara": {"type": "boolean"},
         "razon": {"type": "string"},
     },
-    "required": ["es_publicidad", "categoria", "legible", "texto", "razon"],
+    "required": ["tipo", "ubicacion", "texto", "lectura_clara", "razon"],
     "additionalProperties": False,
 }
+
+
+def haiku_label(data: dict) -> str:
+    """Regla de oro: Valla/Fachada solo si es claramente un aviso y se lee con claridad."""
+    if data["tipo"] == "no_aviso":
+        return "NoPublicidad"
+    if data["tipo"] == "aviso" and data["lectura_clara"] and data["texto"].strip():
+        return data["ubicacion"]
+    return "Dudoso"
 
 
 class HaikuClassifier:
@@ -164,7 +182,7 @@ class HaikuClassifier:
         self.example_blocks = blocks
 
     def classify(self, image: Image.Image, box: list[float]) -> Classification:
-        crop_b64, ctx_b64 = _b64(crop_object(image, box)), _b64(context_window(image, box))
+        crop_b64, ctx_b64 = _b64(crop_object(image, box)), _b64(context_window(image, box), CONTEXT_MAX_SIDE)
         response = self.client.messages.create(
             model=self.model,
             max_tokens=4096,
@@ -190,11 +208,10 @@ class HaikuClassifier:
         if response.stop_reason != "end_turn":
             return Classification("Dudoso", 0.5, None, "", f"stop_reason={response.stop_reason}", backend=self.name)
         data = json.loads(next(b.text for b in response.content if b.type == "text"))
-        es_pub = 1.0 if data["es_publicidad"] else 0.0
         return Classification(
-            label=_decide(es_pub, data["categoria"], data["legible"], 0.5, 0.5),
-            es_publicidad=es_pub,
-            legible=data["legible"],
+            label=haiku_label(data),
+            es_publicidad={"aviso": 1.0, "posible_aviso": 0.5, "no_aviso": 0.0}[data["tipo"]],
+            legible=data["lectura_clara"],
             texto=data["texto"],
             razon=data["razon"],
             backend=self.name,
@@ -232,7 +249,7 @@ class DecisionsClassifier:
         self.example_parts = parts
 
     def classify(self, image: Image.Image, box: list[float]) -> Classification:
-        crop_b64, ctx_b64 = _b64(crop_object(image, box)), _b64(context_window(image, box))
+        crop_b64, ctx_b64 = _b64(crop_object(image, box)), _b64(context_window(image, box), CONTEXT_MAX_SIDE)
         decision = self.client.decisions.create(
             model=self.model,
             input=[

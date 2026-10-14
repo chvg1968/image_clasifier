@@ -10,3 +10,6 @@ output_v2/
 entrega/
 entrega_avisos.zip
 output_v2.zip
+output_v*/
+reclass_v*.log
+~$*.xlsx
