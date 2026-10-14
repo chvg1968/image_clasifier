@@ -210,7 +210,7 @@ def load_detections(result_json: Path) -> tuple[Path, list[Detection]]:
     return Path(res["imagen"]), dets
 
 
-CSV_FIELDS = ["imagen", "id", "categoria", "x0", "y0", "x1", "y1", "area_px", "score_det", "prompt", "recorte"]
+CSV_FIELDS = ["imagen", "id", "categoria", "verificado_manual", "categoria_modelo", "x0", "y0", "x1", "y1", "area_px", "score_det", "prompt", "recorte"]
 
 
 def append_csv(csv_path: Path, result: dict, backends: list[str]) -> None:
@@ -226,6 +226,8 @@ def append_csv(csv_path: Path, result: dict, backends: list[str]) -> None:
                 "imagen": stem,
                 "id": r["id"],
                 "categoria": r["categoria"],
+                "verificado_manual": "si" if r.get("verificado_manual") else "",
+                "categoria_modelo": r.get("categoria_modelo", r["categoria"]),
                 "x0": r["bbox_xyxy"][0],
                 "y0": r["bbox_xyxy"][1],
                 "x1": r["bbox_xyxy"][2],
