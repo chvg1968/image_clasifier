@@ -205,7 +205,7 @@ def build_review(out_dir: Path, labels_csv: Path, preds_json: Path) -> Path:
             f'<div class="row" style="margin-top:6px">{buttons}</div></div>'
         )
     page = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>Revision {out_dir.name}</title><style>{CSS}</style></head><body>
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Revision {out_dir.name} {preds_json.stem}</title><style>{CSS}</style></head><body>
 <header>
 <h1>Revisión de desacuerdos</h1>
 <div class="muted">Objetos donde tu etiqueta y el modelo no coinciden. Tu etiqueta viene marcada: confírmala o cámbiala.

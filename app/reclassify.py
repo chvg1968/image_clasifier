@@ -16,6 +16,7 @@ from PIL import Image
 
 from .classify import build_classifiers
 from .pipeline import append_csv, load_detections, split_by_quality, write_outputs
+from .segment import merge_billboard_parts
 
 
 def main() -> int:
@@ -47,6 +48,7 @@ def main() -> int:
     for n, rj in enumerate(jsons, 1):
         t = time.time()
         path, dets = load_detections(rj)
+        dets = merge_billboard_parts(dets)
         keep, drop = split_by_quality(dets, args.min_size, args.min_score)
         image = Image.open(path).convert("RGB")
         res = write_outputs(path, image, keep, classifiers, out, args.workers, filtered=drop, min_size=args.min_size, min_score=args.min_score)

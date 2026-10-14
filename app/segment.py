@@ -110,6 +110,59 @@ def dedupe(dets: list[Detection], iou: float = 0.5, contain: float = 0.8) -> lis
     return result
 
 
+def merge_billboard_parts(dets: list[Detection], min_overlap: float = 0.35, max_growth: float = 1.6) -> list[Detection]:
+    """Une a una detección de valla ("billboard") los fragmentos de la misma valla: la franja
+    de precio, el logo o el borde que SAM 3 detecta por separado. Un fragmento se une si al
+    menos `min_overlap` de su área cae dentro de la valla y la unión no agranda la caja de la
+    valla más de `max_growth` veces (para no tragarse avisos vecinos)."""
+
+    def area(b):
+        return max(0.0, b[2] - b[0]) * max(0.0, b[3] - b[1])
+
+    def inter(a, b):
+        return area([max(a[0], b[0]), max(a[1], b[1]), min(a[2], b[2]), min(a[3], b[3])])
+
+    order = sorted(range(len(dets)), key=lambda i: -area(dets[i].box))
+    merged_into: dict[int, int] = {}
+    out: dict[int, Detection] = {}
+    for i in order:
+        d = dets[i]
+        if d.prompt != "billboard" or i in merged_into:
+            continue
+        anchor = d
+        for j in order:
+            o = dets[j]
+            if j == i or j in merged_into or j in out or area(o.box) >= area(anchor.box):
+                continue
+            if inter(o.box, anchor.box) < min_overlap * area(o.box):
+                continue
+            u = [min(anchor.box[0], o.box[0]), min(anchor.box[1], o.box[1]), max(anchor.box[2], o.box[2]), max(anchor.box[3], o.box[3])]
+            if area(u) > max_growth * area(anchor.box):
+                continue
+            anchor = _union(anchor, o, u)
+            merged_into[j] = i
+        out[i] = anchor
+    return [out.get(i, dets[i]) for i in range(len(dets)) if i not in merged_into]
+
+
+def _union(a: Detection, b: Detection, box: list[float]) -> Detection:
+    x0, y0 = int(box[0]), int(box[1])
+    mask = None
+    if a.mask is not None and b.mask is not None:
+        mask = np.zeros((int(np.ceil(box[3])) - y0 + 1, int(np.ceil(box[2])) - x0 + 1), dtype=bool)
+        for d in (a, b):
+            h, w = d.mask.shape
+            ox, oy = int(d.mask_xy[0]) - x0, int(d.mask_xy[1]) - y0
+            region = mask[oy : oy + h, ox : ox + w]
+            region |= d.mask[: region.shape[0], : region.shape[1]]
+        # Una valla es una superficie continua: se rellena el hueco entre fragmentos.
+        pts = cv2.findNonZero(mask.astype(np.uint8))
+        hull = np.zeros(mask.shape, dtype=np.uint8)
+        cv2.fillConvexPoly(hull, cv2.convexHull(pts), 1)
+        mask = hull.astype(bool)
+    return Detection(box, max(a.score, b.score), "billboard", mask, (x0, y0))
+
+
 class _Segmenter:
     """Base: aplica detect_region a la imagen completa o a sus mosaicos."""
 
@@ -152,7 +205,7 @@ class _Segmenter:
                     if min(d.box[2] - d.box[0], d.box[3] - d.box[1]) >= min_side:
                         dets.append(d)
 
-        dets = dedupe(dets)
+        dets = merge_billboard_parts(dedupe(dets))
         self.finalize(image, dets)
         return dets
 

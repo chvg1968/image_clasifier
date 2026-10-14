@@ -1,7 +1,10 @@
 """Clasifica solo los objetos con etiqueta manual y mide la precisión. Sirve para comparar
 modelos o criterios sin reclasificar el lote completo.
 
-    python -m app.eval_subset output etiquetas/etiquetas_manuales.csv --model claude-sonnet-5-5
+    python -m app.eval_subset output_v4 etiquetas/etiquetas_manuales.csv --model claude-sonnet-5-5
+
+OJO: usar una carpeta reclasificada (output_v2/v3/v4), no output/. app.reclassify renumera los
+objetos (primero los que pasan el filtro), y las etiquetas usan esa numeración.
 """
 
 from __future__ import annotations
@@ -36,7 +39,7 @@ def _report(name: str, pairs: list[tuple[str, str]]) -> None:
 def main() -> None:
     load_dotenv(Path.cwd() / ".env")
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("source", help="Carpeta con resultado.json por imagen (detecciones)")
+    ap.add_argument("source", help="Carpeta reclasificada cuya numeración usan las etiquetas (p. ej. output_v4)")
     ap.add_argument("labels_csv")
     ap.add_argument("--model", default="claude-haiku-5-5")
     ap.add_argument("--effort", default=None)

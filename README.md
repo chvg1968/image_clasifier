@@ -23,7 +23,8 @@ panorámica ─► mosaicos 2048 px ─► SAM 3 (texto → cajas + máscaras) �
    - `haiku`: Claude Haiku 5.5 con salida JSON. Devuelve la categoría, si el aviso es legible, el texto transcrito y una razón. Los ejemplos van en caché.
    - `openai`: OpenAI Decisions API (`gpt-6-luna`). Devuelve probabilidades de "es publicidad", de cada categoría y de "es legible".
    - `both` (recomendado): corre los dos. La categoría final es la de Haiku, salvo cuando Haiku dice Dudoso y OpenAI dice Fachada o Valla con probabilidad ≥ 0.8. En ese caso gana OpenAI (ver `combine` en `app/pipeline.py`).
-3. **Filtro de ruido**, antes de clasificar: los objetos cuyo lado mayor mide menos de 60 px, o con score de detección menor que 0.5, se descartan sin llamar a la API. En una panorámica 12K casi todos son manchas imposibles de identificar. Quedan en `descartados` con el motivo "filtrado". Se ajusta con `--min-size` y `--min-score`.
+3. **Unión de fragmentos de valla:** si SAM 3 detecta por separado partes de una misma valla (franja de precio, logo, borde), `merge_billboard_parts` en `app/segment.py` las une en un solo objeto con la máscara rellena.
+4. **Filtro de ruido**, antes de clasificar: los objetos cuyo lado mayor mide menos de 60 px, o con score de detección menor que 0.5, se descartan sin llamar a la API. En una panorámica 12K casi todos son manchas imposibles de identificar. Quedan en `descartados` con el motivo "filtrado". Se ajusta con `--min-size` y `--min-score`.
 
 ## Ejemplos de referencia
 
@@ -87,4 +88,4 @@ Configuración recomendada para lotes nuevos: solo Haiku. La ventana de contexto
 .venv/bin/python -m app assets/images --classifier haiku
 ```
 
-`etiquetar.html` muestra los objetos en los que Haiku y OpenAI no coinciden, mezclados con 30 acuerdos de control. Por defecto oculta las respuestas de los modelos. Las etiquetas se guardan en el navegador y "Descargar CSV" las exporta. `app.evaluate` calcula cuánto acierta cada clasificador (haiku, openai y final) contra esas etiquetas.
+`etiquetar.html` muestra los objetos en los que Haiku y OpenAI no coinciden, mezclados con 30 acuerdos de control. Por defecto oculta las respuestas de los modelos. Las etiquetas se guardan en el navegador y "Descargar CSV" las exporta. Las etiquetas consolidadas están en `etiquetas/`. Como la numeración de objetos cambia entre reclasificaciones, `app.remap_labels` traslada las etiquetas a una carpeta nueva comparando cajas, y `app.eval_subset` compara modelos clasificando solo los objetos etiquetados. `app.evaluate` calcula cuánto acierta cada clasificador (haiku, openai y final) contra esas etiquetas.

@@ -44,16 +44,16 @@ L6_064.jpg: 1
 L6_054.jpg: 2
 
 claude-sonnet-5-5 — errores de API: 0 — predicciones en etiquetas/pred_claude-sonnet-5-5.json
-  aleatorio        exacta 112/150 (75%) · V/F dibujadas correctas 21/31 · V/F reales encontradas 21/34
-  aleatorio-mitad  exacta  60/79 (76%) · V/F dibujadas correctas 14/20 · V/F reales encontradas 14/20
-  difíciles 80     exacta  44/80 (55%) · V/F dibujadas correctas 9/16 · V/F reales encontradas 9/13
+  aleatorio        exacta 127/150 (85%) · V/F dibujadas correctas 27/32 · V/F reales encontradas 27/34
+  aleatorio-mitad  exacta  64/79 (81%) · V/F dibujadas correctas 15/19 · V/F reales encontradas 15/20
+  difíciles 80     exacta  54/80 (68%) · V/F dibujadas correctas 7/12 · V/F reales encontradas 7/13
 
 Errores (aleatorio, real → predicho):
-  NoPublicidad  → Dudoso        10
-  Fachada       → NoPublicidad  6
-  Fachada       → Dudoso        6
-  Dudoso        → NoPublicidad  6
-  Dudoso        → Fachada       5
-  NoPublicidad  → Fachada       3
+  NoPublicidad  → Dudoso        8
+  Fachada       → Dudoso        5
+  Dudoso        → NoPublicidad  5
+  Dudoso        → Valla         1
+  Fachada       → Valla         1
   Valla         → Fachada       1
   NoPublicidad  → Valla         1
+  Dudoso        → Fachada       1

@@ -87,7 +87,7 @@ L6_059,21,aleatorio,Dudoso
 L6_095,7,aleatorio,NoPublicidad
 L6_059,41,aleatorio,NoPublicidad
 L6_080,0,aleatorio,NoPublicidad
-L6_098,32,aleatorio,Dudoso
+L6_098,32,aleatorio,Valla
 L6_058,8,aleatorio,NoPublicidad
 L6_092,9,aleatorio,NoPublicidad
 L6_074,7,aleatorio,Fachada
@@ -116,9 +116,9 @@ L6_066,3,aleatorio,NoPublicidad
 L6_076,16,aleatorio,NoPublicidad
 L6_085,5,aleatorio,Dudoso
 L6_067,7,aleatorio,NoPublicidad
-L6_096,5,aleatorio,Fachada
+L6_096,5,aleatorio,Dudoso
 L6_061,5,aleatorio,NoPublicidad
-L6_098,16,aleatorio,Fachada
+L6_098,16,aleatorio,Valla
 L6_077,11,aleatorio,NoPublicidad
 L6_098,3,aleatorio,Valla
 L6_071,4,aleatorio,Dudoso
@@ -153,7 +153,7 @@ L6_100,5,aleatorio,NoPublicidad
 L6_098,21,aleatorio,Fachada
 L6_093,2,aleatorio,Dudoso
 L6_099,4,aleatorio,NoPublicidad
-L6_070,4,aleatorio,Valla
+L6_070,4,aleatorio,Fachada
 L6_078,41,aleatorio,NoPublicidad
 L6_068,4,aleatorio,NoPublicidad
 L6_091,23,aleatorio,NoPublicidad
@@ -163,7 +163,7 @@ L6_059,28,aleatorio,Dudoso
 L6_098,1,aleatorio,Fachada
 L6_078,37,aleatorio,NoPublicidad
 L6_078,25,aleatorio,NoPublicidad
-L6_098,4,aleatorio,NoPublicidad
+L6_098,4,aleatorio,Valla
 L6_088,9,aleatorio,NoPublicidad
 L6_059,16,aleatorio,Fachada
 L6_059,39,aleatorio,NoPublicidad
@@ -209,7 +209,7 @@ L6_078,39,aleatorio,NoPublicidad
 L6_091,24,aleatorio,NoPublicidad
 L6_072,4,aleatorio,Fachada
 L6_091,6,aleatorio,Dudoso
-L6_061,4,aleatorio,Fachada
+L6_061,4,aleatorio,Dudoso
 L6_059,26,aleatorio,Dudoso
 L6_057,4,aleatorio,Dudoso
 L6_059,11,aleatorio,NoPublicidad
@@ -223,7 +223,7 @@ L6_085,11,aleatorio,NoPublicidad
 L6_076,22,aleatorio,NoPublicidad
 L6_059,36,aleatorio,NoPublicidad
 L6_066,1,aleatorio,Valla
-L6_067,3,aleatorio,Fachada
+L6_067,3,aleatorio,Dudoso
 L6_054,4,aleatorio,NoPublicidad
 L6_096,8,aleatorio,Fachada
 L6_074,1,aleatorio,Fachada
