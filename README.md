@@ -71,3 +71,12 @@ Para agregar un ejemplo, pon la imagen con el aviso enmarcado en `assets/images_
 
 - La unión entre el borde izquierdo y el derecho de la panorámica (lo que queda detrás del vehículo) no se procesa en conjunto. Un aviso partido justo ahí puede salir en dos pedazos.
 - Cada panorámica tarda unos 70 s en un Mac M4, casi todo en SAM 3.
+
+## Etiquetado manual y precisión
+
+```bash
+.venv/bin/python -m app.label_page output_v2          # genera output_v2/etiquetar.html
+.venv/bin/python -m app.evaluate output_v2 ~/Downloads/etiquetas_manuales.csv
+```
+
+`etiquetar.html` muestra los objetos en los que Haiku y OpenAI no coinciden, mezclados con 30 acuerdos de control. Por defecto oculta las respuestas de los modelos. Las etiquetas se guardan en el navegador y "Descargar CSV" las exporta. `app.evaluate` calcula cuánto acierta cada clasificador (haiku, openai y final) contra esas etiquetas.
