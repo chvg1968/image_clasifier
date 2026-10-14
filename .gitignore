@@ -1,0 +1,9 @@
+.venv/
+.env
+output/
+__pycache__/
+.DS_Store
+output_ui/
+run.log
+reclass.log
+output_v2/
